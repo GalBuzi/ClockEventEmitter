@@ -34,6 +34,6 @@ export class Clock extends MyEventEmitter{
     private tick = () => {
         this.countTicks++
         this.emit(TICK, this.countTicks)
-        this.emit(ONCE,this.countTicks)
+        // this.emit(ONCE,this.countTicks)
     }
   }

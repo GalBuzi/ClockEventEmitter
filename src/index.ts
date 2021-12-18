@@ -20,10 +20,10 @@ function tickingMyClock(payload : number){
     }
 }
 
-function once1(payload : number){
-    setTimeout(()=> console.log('once function num 1  ' , payload), Math.random() * 3000)
+// function once1(payload : number){
+//     setTimeout(()=> console.log('once function num 1  ' , payload), Math.random() * 3000)
     
-}
+// }
 
 // if you've completed the `once` bonus task
 //   - make sure you respond to start and stop only once
@@ -37,7 +37,7 @@ function once1(payload : number){
 // start the rolex
 let rolex = new Clock(500);
 rolex.on(TICK, tickingMyClock)
-rolex.once(ONCE, once1)
+// rolex.once(ONCE, once1)
 rolex.once(START, startClock)
 rolex.once(STOP, stopClock)
 console.log(rolex.eventNames());
